@@ -1,7 +1,5 @@
 <div align="center">
-
   <img src="https://github.com/jpengineer/mr_x/blob/main/src/assets/img/simpson-homer-mister-x.gif?raw=true" alt="Mr. X" width="80">
-
 </div>
 <div align="center">
   <h1>Mr. X's Web Page</h1> 
