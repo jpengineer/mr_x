@@ -1,12 +1,13 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect} from 'react';
+import { useInView } from 'react-intersection-observer';
 import HomeSection from '@/sections/Home';
+import NewsSection from "@/sections/News.jsx";
+import Header from "@/components/Header.jsx";
 
 
 const MrX = () => {
-    const homeRef = useRef(null);
-
-    // const isHomeInView = useInView(homeRef, {once: false});
-    // const [isVisible, setIsVisible] = useState(false);
+    const [homeRef, _] = useInView({ threshold: 0.5, triggerOnce: true})
+    const [newsRef, isNewsVisible] = useInView({ threshold: 0.5, triggerOnce: true})
 
     useEffect(() => {
         const hash = window.location.hash;
@@ -21,10 +22,14 @@ const MrX = () => {
     }, []);
 
     return (
-        <div className="min-h-screen flex flex-col bg-(--color-background) text-(--color-text)">
+        <div className="min-h-screen flex flex-col bg-(--color-background) text-(--color-text) cursor-[url('/src/assets/img/cursor.png'),auto]">
             <main className="flex-grow relative ">
-                <section ref={homeRef} id="home" className="h-min-screen">
+                <section ref={homeRef}  id="home" className="h-screen w-full">
                     <HomeSection/>
+                </section>
+                <section ref={newsRef} id="news" className="h-screen w-full">
+                    <Header/>
+                    <NewsSection isActive={isNewsVisible}/>
                 </section>
             </main>
         </div>
