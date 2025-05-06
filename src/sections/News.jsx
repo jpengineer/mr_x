@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import Homer from "../../dist/assets/img/homer.png"
-import MrX from "../../dist/assets/img/mrX.png"
+import Homer from "@/assets/img/homer.png"
+import MrX from "@/assets/img/mrX.png"
 import {isMobile} from "react-device-detect";
 
 const NewsSection = ({isActive}) => {

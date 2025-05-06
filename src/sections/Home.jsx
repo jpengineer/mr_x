@@ -98,7 +98,7 @@ const HomeSection = () => {
                 <div className="flex flex-col h-auto">
                     <img src={`${Clock}`} className="h-[4vh] md:h-[8vh] mb-[2vh] md:mb-[5vh] ml-[2vw] md:ml-[5vw]" alt="Clock"/>
                     <img src={`${Worm}`} className="h-[4vh] md:h-[8vh] mb-[2vh] md:mb-[5vh] -ml-[0.5vw] md:-ml-[1vw]" alt="Worm"/>
-                    <img src={`${Toaster}`} className="h-[4vh] md:h-[8vh] mt-[2vh] md:mt-[5vh]" alt="Toaster"/>
+                    <img src={`${Toaster}`} className="h-[4vh] md:h-[15vh] md:w-[15vh] mt-[2vh] ml-[5vh] md:mt-[5vh]" alt="Toaster"/>
                     <img src={`${Bell}`} className="h-[4vh] md:h-[8vh] mb-[2vh] md:mb-[5vh] ml-[4vw] md:ml-[8vw] mt-[0.3vh] md:mt-[0.5vh]" alt="Bell"/>
                     <img src={`${Worm}`} className="h-[4vh] md:h-[8vh] mb-[2vh] md:mb-[5vh] ml-[0.3vw] md:ml-[0.5vw] pb-[0.5vh] md:pb-[2vh]" alt="Worm"/>
                 </div>
@@ -119,7 +119,7 @@ const HomeSection = () => {
                     <img src={`${Toaster}`} className="h-[10vh] md:h-[18vh] mb-[2vh] md:mb-[5vh] mt-[2vh] md:mt-[5vh]" alt="Toaster"/>
                 </div>
                 <div className="flex flex-col h-auto">
-                    <img src={`${Toaster}`} className="h-[3vh] md:h-[7vh] mb-[2vh] md:mb-[5vh] -mt-[2vh] md:-mt-[5vh]" alt="Toaster"/>
+                    <img src={`${Toaster}`} className="w-[4vh] md:w-[8vh] h-[3vh] md:h-[7vh] mb-[2vh] md:mb-[5vh] -mt-[2vh] md:-mt-[5vh]" alt="Toaster"/>
                     <img src={`${Mouth}`} className="h-[8vh] md:h-[15vh] mb-[2vh] md:mb-[5vh]" alt="Mouth"/>
                     <img src={`${Clock}`} className="h-[3vh] md:h-[7vh] mb-[2vh] md:mb-[5vh] ml-[2vw] md:ml-[5vw]" alt="Clock"/>
                 </div>
