@@ -6,7 +6,7 @@ const Header = () => {
             className={`${isMobile ? "h-[150px]" : "h-[300px]" } bg-(--color-background-secondary) border-2 border-black w-full mx-auto flex items-center px-4 sm:px-6 py-4  `}>
             <div
                 className={` ${isMobile ? "ml-2" : "ml-15 mt-10 z-10"} flex flex-col items-center justify-center w-[100px] sm:w-[130px]text-center leading-none flex-shrink-0 bg-transparent`}>
-                <div className="text-5xl sm:text-7xl -rotate-12 font-black bg-transparent">Mr.</div>
+                <div className={`${isMobile ? "-ml-5 text-4xl" : ""} leading-none lg:text-8xl lg:-mb-5 lg:-ml-6 md:text-4xl md:mb-2 md:ml-1 -rotate-12 font-black bg-transparent`}>Mr.</div>
                 <div
                     className="text-[90px] sm:text-[200px] md:text-[100px] lg:text-[300px] font-black -rotate-12 -mt-4 sm:-mt-6 sm:ml-4 bg-transparent">X
                 </div>

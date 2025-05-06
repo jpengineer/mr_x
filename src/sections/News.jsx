@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
-import Homer from "@/assets/img/homer.png"
-import MrX from "@/assets/img/mrX.png"
+import Homer from "../../dist/assets/img/homer.png"
+import MrX from "../../dist/assets/img/mrX.png"
 import {isMobile} from "react-device-detect";
 
 const NewsSection = ({isActive}) => {
@@ -21,7 +21,7 @@ const NewsSection = ({isActive}) => {
 
     }, [isActive]);
     return (
-        <div className="w-full min-h-screen flex flex-col relative ">
+        <div className="w-full min-h-screen flex flex-col relative">
             <div className="flex gap-2">
                 <div className={`${isMobile ? "w-1/3" : "w-[350px]"}  bg-(--color-background-secondary) border-l-2 border-r-2 border-b-2
                 border-t-(--color-background-secondary) border-black p-4 -mt-[2px] z-10}`}>
@@ -37,7 +37,7 @@ const NewsSection = ({isActive}) => {
 
 
                 <div
-                    className={`${isMobile ? "p-2 mt-5 h-[250px]" : "p-16 mt-16 h-[600px]"} w-full bg-transparent border-black overflow-y-scroll overflow-hidden snap-y snap-mandatory `}>
+                    className={`${isMobile ? "p-2 mt-5 h-[250px]" : "p-16 mt-16 h-[600px]"} w-full bg-transparent border-black scrollbar-hidden overflow-y-scroll  snap-y snap-mandatory `}>
                     <div onClick={() => isMobile && setIsTapped(!isTapped)} className={`mb-12 snap-start h-full flex items-center justify-center border-1  
                     ${isMobile ? isTapped ? "bg-black border-green-500 text-green-500 no-underline" : "bg-green-500 border-black text-black underline" : "bg-green-500 border-black text-black underline hover:no-underline hover:bg-black hover:border-green-500 hover:text-green-500"}`}>
                         <h1 className={`${isMobile ? "text-5xl" : "md:text-4xl lg:text-9xl text-7xl"}  font-bold  text-center  leading-tight`}>

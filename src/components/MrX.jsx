@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import HomeSection from '@/sections/Home';
 import NewsSection from "@/sections/News.jsx";
 import Header from "@/components/Header.jsx";
+import Curtain from "@/components/Curtain.jsx";
 
 
 const MrX = () => {
@@ -22,7 +23,8 @@ const MrX = () => {
     }, []);
 
     return (
-        <div className="min-h-screen flex flex-col bg-(--color-background) text-(--color-text) cursor-[url('/src/assets/img/cursor.png'),auto]">
+        <div className="min-h-screen flex flex-col bg-(--color-background) text-(--color-text) cursor-[url('/src/assets/img/cursor.png'),auto] scrollbar-win95">
+            <Curtain />
             <main className="flex-grow relative ">
                 <section ref={homeRef}  id="home" className="h-screen w-full">
                     <HomeSection/>

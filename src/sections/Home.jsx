@@ -14,7 +14,7 @@ const HomeSection = () => {
 
     const TYPING_SPEED = 100;
     const DELETING_SPEED = 100;
-    const INITIAL_DELAY = 3000;
+    const INITIAL_DELAY = 6000;
 
 
     const toggleSound = () => {
